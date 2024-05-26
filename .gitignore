@@ -172,5 +172,3 @@ cython_debug/
 
 # Ignore Session.nvim from current and all subdirectories
 Session.vim
-dist/
-workdir/
