@@ -1,0 +1,20 @@
+[flake8]
+ignore =
+    # Whitespace before ':'
+    E203,
+    # Too many leading '#' for block comment
+    E266,
+    # Line too long (82 > 79 characters)
+    E501,
+    # Line break occurred before a binary operator
+    W503,
+    # trailing whitespace inside triple quoted strings
+    W291
+max-line-length = 90
+max-complexity = 18
+exclude = .git,
+          __pycache__,
+          docs/source/conf.py,
+          old,
+          build,
+          dist

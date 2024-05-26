@@ -1,0 +1,33 @@
+[GLOBAL]
+pants_version = "2.20.1"
+backend_packages.add = [
+    "pants.backend.python",
+    "pants.backend.python.lint.flake8",
+    "pants.backend.python.lint.black",
+    "pants.backend.build_files.fmt.black",
+    "pants.backend.python.lint.docformatter",
+    "pants.backend.python.typecheck.mypy",
+    "pants.backend.docker"
+]
+
+[docker]
+build_no_cache = true
+
+[anonymous-telemetry]
+enabled = false
+
+[source]
+root_patterns = ["/"]
+
+[python]
+interpreter_constraints = [">=3.11.0"]
+enable_resolves = true
+
+[python-bootstrap]
+search_path = [
+    "<PYENV>",
+    "/usr/local/bin",
+]
+
+[mypy]
+config = "mypy.ini"
