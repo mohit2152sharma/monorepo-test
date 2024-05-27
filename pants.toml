@@ -17,10 +17,10 @@ build_no_cache = true
 enabled = false
 
 [source]
-root_patterns = ["/"]
+root_patterns = ["/pyprjs"]
 
 [python]
-interpreter_constraints = [">=3.11.0"]
+interpreter_constraints = ["==3.11.*"]
 enable_resolves = true
 
 [python-bootstrap]
